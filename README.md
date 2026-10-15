@@ -1,7 +1,6 @@
 # Home Assistant Solem Bluetooth Watering Controller Integration
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Default-41BDF5.svg)](https://github.com/hacs/integration)
-[![GitHub release](https://img.shields.io/github/release/hcraveiro/Home-Assistant-Solem-Bluetooth-Watering-Controller.svg)](https://github.com/hcraveiro/Home-Assistant-Solem-Bluetooth-Watering-Controller/releases/)
 
 Integrate Solem Bluetooth Watering Controllers (tested on BL-IP) into Home Assistant. Control irrigation per station, monitor rain and water consumption, and automate watering based on weather data.
 
