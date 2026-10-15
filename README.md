@@ -2,7 +2,7 @@
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Default-41BDF5.svg)](https://github.com/hacs/integration)
 
-Integrate Solem Bluetooth Watering Controllers (tested on BL-IP) into Home Assistant. Control irrigation per station, monitor rain and water consumption, and automate watering based on weather data.
+Integrate Solem Bluetooth Watering Controllers (tested on BL4-IP) into Home Assistant. Control irrigation per station, monitor rain and water consumption, and automate watering based on weather data. This integration can use ESPHome BT proxies to connect the BL-IP.
 
 - [Installation](#installation)
 - [Configuration](#configuration)
@@ -105,7 +105,7 @@ All services are available under the `solem_bluetooth_watering_controller` domai
 
 ### Can I configure other controller models?
 
-Only the BL4-IP has been tested so far.
+Only the BL-IP has been tested so far.
 
 ### Do I still need the Solem Toolkit integration?
 
@@ -114,3 +114,7 @@ No. The BLE layer is now built directly into this integration. You can remove `s
 ### What does a station duration of 0 mean?
 
 A duration of 0 sends a 60-minute timed command to the BL-IP. The device counts down internally and closes the valve at the end, without requiring HA to send a stop command. Use this when you don't know how long the run will last and use an other sensor in an automation (for example if you want to reach a specific target for soil humidity).
+
+##Credits
+
+Huge thanks to hcraveiro for all the groundwork around the Solem HA integration. A lot of credits also goes to pcman75 for the Solem controllers reverse engineering documentation.
